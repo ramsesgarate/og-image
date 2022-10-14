@@ -16,6 +16,11 @@ function getCss(theme: string, fontSize: string) {
     let foreground = 'white';
     let radial = 'dimgray';
 
+    if (theme === 'dark') {
+        background = 'black';
+        foreground = 'white';
+        radial = 'dimgray';
+    }
     return `
     @font-face {
         font-family: 'Inter';
